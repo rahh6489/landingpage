@@ -1,0 +1,330 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+    font-family:Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root{
+    --pink:rgb(247, 67, 97);
+}
+
+html{
+    font-size: 65.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+    overflow-x: hidden;
+}
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    background: rgb(252, 252, 252);
+    padding: 3rem 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .8rem 1rem rgba(0,0,0,.1);
+
+}
+
+header .logo{
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+}
+header .logo span{
+    color: var(--pink);
+}
+
+header .navbar a{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 0 1.8rem;
+    color: #666;
+}
+header .navbar a:hover{
+    color: var(--pink);
+}
+header .navbar a:active{
+    color:rgb(0, 0, 0);
+    transition: 1s glow ;
+}
+header .icons a{
+    font-size: 2.5rem;
+    margin: 8px;
+    color: #3d3d3d;
+
+}
+header .icons a:hover{
+    color:rgb(26, 26, 26);
+}
+/*header .icons a:active{
+    color: var(--pink);
+
+}*/
+
+header #toggler{
+    display: none;
+}
+
+header .menu-class{
+    font-size: 2.5rem;
+    color: #3d3d3d;
+    border-radius: .5rem;
+    padding: 0.5rem 1rem;
+    cursor:pointer;
+    border: 2px solid rgba(0,0,0,.2);
+    display: none;
+
+}
+header .menu-class:hover{
+    color: var(--pink);
+}
+
+section{
+    padding: 2rem 10%;
+}
+.home{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: url(bg1.jpg) no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+.home .content{
+    max-width: 50rem;
+}
+.home .content h3{
+    font-size: 5rem;
+    color: rgb(0, 0, 0);
+}
+.home .content span{
+    font-size: 2.8rem;
+    color: rgba(121, 84, 84, 0.91);
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.home .content p{
+    font-size: 1.6rem;
+    color: #3a2f2f;
+}
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: rgb(65, 23, 30);
+    border-radius: 4rem;
+    box-shadow: none;
+    font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    color: azure;
+    margin-top: 20px;
+}
+.btn:hover{
+    box-shadow:  0 0 25px rgb(255, 193, 203) ;
+}
+
+.heading{
+    text-align: center;
+    font-size: 4rem;
+    color: rgb(59, 29, 29);
+    padding: 1rem;
+    margin: 3rem 0;
+
+}
+.heading span{
+    color: rgb(104, 1, 34);
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding: 3rem 0;
+    padding-bottom: 3rem;
+}
+.about .video-container{
+    flex: 1 1 30rem;
+    position: relative;
+}
+.about .video-container video{
+    width: 100%;
+    border-radius:2rem ;
+    border: 0.5rem solid rgba(60, 41, 41, 0.91);
+}
+.about .video-container h3{
+    font-size: 1.8rem;
+    color: #000000;
+    text-align: center;
+}
+.about .content h3{
+    font-size: 2.8rem;
+    color: rgba(60, 41, 41, 0.91);
+    padding: 1rem 0;
+    line-height: 1.5;
+    font-weight: 600;
+}
+.about .content p{
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.products{
+    background: rgb(255, 247, 247);
+}
+
+.products h3{
+    margin: 20px;
+    margin-bottom: 4rem;
+}
+.products-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+.product-box{
+    flex: 1 1 30rem;
+    background: rgb(255, 235, 238);
+    padding: 6rem 2rem 6rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 0.3rem solid rgb(191, 148, 155);
+    transition: 0.3s ease;
+}
+.product-box:hover{
+    border-color: rgb(120, 80, 86);
+    transform: scale(1.05);
+}
+.product-box img{
+    height: 30rem;
+    width: 30rem;
+}
+.product-box h3{
+    font-size: 2.5rem;
+}
+.product-box p{
+    font-size: 1.5rem;
+    margin: 1rem 0 3rem;
+    text-wrap: wrap;
+}
+.product-box h3 a{
+    color: gold;
+}
+
+
+.review{
+    background: rgb(252, 235, 237);
+}
+.reviews-box{
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.reviews-box .heading{
+    margin-bottom: 4rem;
+}
+.wrapper .reviews-item img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    border: 0.4rem solid  rgb(255, 78, 228);
+    box-shadow: 0 0 20px rgb(228, 187, 255)
+}
+.reviews .wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.wrapper .reviews-item{
+    min-height: 400px;
+    max-width: 400px;
+    background: rgb(249, 207, 242);
+    border: 0.8rem solid var(--snd-bg-color);
+    border-radius: 0.3rem;
+    padding: 10px 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    transition: 0.3s ease;
+}
+.wrapper .reviews-item:hover{
+    border-color: var(--main-color);
+    transform: scale(1.02);
+}
+
+.wrapper .reviews-item h2{
+    font-size: 2rem;
+
+}
+.wrapper .reviews-item p{
+    font-size: 1.3rem;
+    text-align: center;
+}
+#star{
+    font-size: 2rem;
+    color: gold;
+}
+
+.contact h2{
+    margin-bottom: 3rem;
+    color: var(--main-color);
+}
+.contact form{
+    max-width: 80rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact form .input-box input,
+.contact form textarea{
+    width: 100%;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    background: var(--snd-bg-color);
+    border-radius: 0.3rem;
+    resize: none;
+    border: 0.25rem solid var(--main-color);
+    margin: 0.7rem 0;
+}
+.contact form .input-box input{
+    width: 49%;
+    margin: 0.7rem 0.35rem;
+}
+
+.contact form .btn{
+    margin-top: 2rem;
+}
+.contact .heading{
+    text-align: center;
+}
